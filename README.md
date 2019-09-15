@@ -11,3 +11,6 @@ In the second step, please copy the high-frequency sub-bands generated above to 
 In the third step, the LL sub-band generated in the first step is further enhanced by VDSR network. Note that the network needs to be re-trained for different wavelet filters. The model provided is trained for haar filter only. 
 
 In the fourth step, the generated LL and high-frequency sub-bands are re-combined into an image using inverse SWT by running ISWT.m.
+
+The style transfer software code is modified based on https://github.com/hwalsuklee/tensorflow-style-transfer.
+The NRQM score is calculated using the matlab code provided by PIRM challenge https://www.pirm2018.org/PIRM-SR.html. 
