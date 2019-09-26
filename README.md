@@ -1,4 +1,4 @@
-# Wavelet-Domain-Style-Transfer-for-an-Effective-Perception-distortion-Tradeoff-in-Single-Image-Super-
+# Wavelet Domain Style Transfer for an Effective Perception-distortion Tradeoff in Single Image Super-Resolution
 ICCV 2019 oral presentation
 The results of different datasets can be downloaded from the following link: https://drive.google.com/file/d/1GXNNLoepD_Lx5Fz_O_lM9rusEhvxuT2r/view?usp=sharing
 
