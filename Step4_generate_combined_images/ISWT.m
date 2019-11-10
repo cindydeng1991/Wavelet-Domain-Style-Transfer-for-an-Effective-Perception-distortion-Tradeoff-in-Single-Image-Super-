@@ -60,18 +60,12 @@ gv_l2=gv_l2.*para(6,2)+para(6,1);
 gd_l2=gd_l2.*para(7,2)+para(7,1);
 
 
-da(:,:,:,2)=LL; 
-
+da(:,:,:,2)=LL;da(:,:,:,1)=zeros(size(gh_l2));
 dh(:,:,:,1)=gh_l1; dh(:,:,:,2)=gh_l2;
 dv(:,:,:,1)=gv_l1; dv(:,:,:,2)=gv_l2;
 dd(:,:,:,1)=gd_l1; dd(:,:,:,2)=gd_l2;
-[h,w,~]=size(LL);
-LL=reshape(LL,[h,w,1,3]);
-gh_l2=reshape(gh_l2,[h,w,1,3]);
-gv_l2=reshape(gv_l2,[h,w,1,3]);
-gd_l2=reshape(gd_l2,[h,w,1,3]);
-da(:,:,:,1)=iswt2(LL,gh_l2,gv_l2,gd_l2,filter);
+
 Img = iswt2(da,dh,dv,dd,filter);
-imwrite(Img,[num2str(i+100,'%d') '.png']);
+imwrite(Img,[num2str(i+100,'%d') '_new.png']);
 clear da dh dv dd LL para Img
 end
